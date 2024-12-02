@@ -1,0 +1,14 @@
+function calcularPrecoVenda() {
+    let valorCompra = parseFloat(document.getElementById('valorCompra').value);
+    
+    let resultado = document.getElementById('resultado');
+    
+    let precoVenda;
+    if (valorCompra < 20) {
+        precoVenda = valorCompra * 1.45;  
+    } else {
+        precoVenda = valorCompra * 1.30;  
+    }
+
+      resultado.textContent = "O valor de venda do produto é: R$ " + precoVenda.toFixed(2);
+}
